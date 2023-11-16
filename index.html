@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Universitech</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/variables.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <h1>Universitech<span>.</span></h1>
+      </a>
+      <div id="login">
+        <a class="btn-getstarted scrollto"  href="signin.html">Entrar</a>
+      </div>
+      <div id="logout" class="div-logout">
+        <p class="user-name"></p>
+        <a class="btn-getstarted scrollto" href="index.html" onclick="logout()">logout</a>
+      </div>
+      
+     
+    </div>
+      
+  </header>
+
+  <section id="hero-animated" class="hero-animated d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative"
+      data-aos="zoom-out">
+      <img src="https://www.svgrepo.com/show/5015/college-pin.svg" class="img-fluid animated" width="200">
+      <h2>Bem vindo(a) a <span>Universitech</span>, <span id="user-name-space"></span></h2>
+      <p>A universidade perfeita para você que deseja imergir em tecnologia.</p>
+      <div class="d-flex">
+        <div id="hide-signup">
+          <a href="signup.html" class="btn-get-started scrollto">Cadastrar-se</a>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <section id="featured-services" class="featured-services">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-activity icon"></i></div>
+              <h4><a href="" class="stretched-link">Mentoria de carreira</a></h4>
+              <p> serviço dedicado a orientar e apoiar os alunos na construção de trajetórias profissionais
+                bem-sucedidas.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+              <h4><a href="" class="stretched-link">Cursos estruturados</a></h4>
+              <p>Os cursos oferecidos na Universitech são cuidadosamente estruturados para proporcionar uma experiência
+                educacional abrangente e eficaz.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+              <h4><a href="" class="stretched-link">Horários flexíveis</a></h4>
+              <p>Você pode marcar os horários disponíveis das aulas de acordo com sua realidade.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+              <h4><a href="" class="stretched-link">Alto networking</a></h4>
+              <p>Apresentações, seminários, eventos e hackatons voltados para o público tech fazer network.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Sobre nós</h2>
+          <p>Somos uma universidade diferente. Somos uma universidade voltada para o futuro. Somos a universitech,
+            universidade de tecnologia especializada em diversas áreas.</p>
+        </div>
+
+        <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-5">
+            <div class="about-img">
+              <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <h3 class="pt-0 pt-lg-5">Somos uma Universidade Diferente: Universitech, a Instituição do Futuro</h3>
+
+            <ul class="nav nav-pills mb-3">
+              <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Cenário atual</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">DNA</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Especialização</a></li>
+            </ul>
+
+            <div class="tab-content">
+
+              <div class="tab-pane fade show active" id="tab1">
+
+                <p class="fst-italic">No cenário educacional contemporâneo, a busca por inovação e excelência tornou-se
+                  imperativa. E é nesse contexto que surge a Universitech, uma universidade verdadeiramente singular,
+                  comprometida com a transformação e a especialização em tecnologia em diversas áreas do conhecimento.
+                  Somos uma instituição de ensino superior que abraça o futuro com paixão e determinação, e nesse
+                  artigo, exploraremos o que torna a Universitech tão excepcional e voltada para o porvir.</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Cursos atualizados</h4>
+                </div>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Professores especializados</h4>
+                </div>
+
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Sem custo adicional por aula assistida</h4>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade show" id="tab2">
+                <p class="fst-italic">O DNA da Universitech é forjado na promessa de inovação. Enquanto muitas
+                  universidades se apegam às tradições, nós abraçamos a mudança e nos posicionamos como líderes no
+                  desenvolvimento de novas tecnologias e métodos de ensino. Somos movidos pela crença de que a
+                  tecnologia é a chave para desbloquear todo o potencial humano. Por isso, nossa abordagem
+                  interdisciplinar abrange uma ampla gama de áreas de conhecimento, onde a tecnologia desempenha um
+                  papel fundamental.</p>
+              </div>
+
+              <div class="tab-pane fade show" id="tab3">
+                <p>
+                  Seja na engenharia de inteligência artificial, na biotecnologia de ponta, na cibersegurança, na
+                  engenharia espacial ou em muitas outras disciplinas, a Universitech se destaca por oferecer programas
+                  de graduação e pós-graduação de ponta que capacitam nossos alunos a liderar a revolução tecnológica
+                  que está moldando o mundo. Nossos professores são especialistas em suas áreas, e nosso ambiente de
+                  aprendizado é rico em recursos, proporcionando aos estudantes uma experiência educacional inigualável.
+                </p> </br>
+                Mas ser uma universidade voltada para o futuro não é apenas uma questão de currículo e conhecimento.
+                </br> </br>
+                A Universitech é mais do que uma universidade comum; somos uma comunidade que abraça a mudança e abraça
+                o futuro. Estamos moldando as mentes do amanhã e capacitando os líderes e inovadores de amanhã. Se você
+                deseja fazer parte dessa jornada emocionante em direção ao desconhecido, junte-se a nós na Universitech,
+                onde o futuro se torna realidade todos os dias. </br> </br>
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row g-5">
+
+          <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
+            <h3>Ainda não sabe o que cursar?
+              <br>
+              A gente te ajuda!
+            </h3>
+
+            <ul>
+              <li>Análise e Desenvolvimento de Sistemas</li>
+              <li>Engenharia de Software</li>
+              <li>Gestão da Tecnologia da Informação</li>
+              <li>Ciência da Computação</li>
+            </ul>
+
+            <p> Estes são apenas alguns exemplos, Se você ainda não sabe qual caminho seguir, não se preocupe!
+              <br>
+              A gente te ajuda a descobrir quais cursos mais combinam com você.
+            </p>
+            <a class="cta-btn align-self-start" href="#">Entrar em Contato</a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+            <div class="img">
+              <img src="assets/img/cta.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="onfocus" class="onfocus">
+      <div class="container-fluid p-0" data-aos="fade-up">
+
+        <div class="row g-0">
+          <div class="col-lg-6 video-play position-relative">
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+          </div>
+          <div class="col-lg-6">
+            <div class="content d-flex flex-column justify-content-center h-100">
+              <h3>Campus Inovador: O Epicentro da Tecnologia na Universitech</h3>
+              <p class="fst-italic">
+                A Universitech está situada em um moderno campus, projetado para proporcionar um ambiente inspirador e
+                inovador.
+                Com amplas áreas verdes, espaços de convivência e instalações de última geração, o campus é um local
+                ideal para os estudantes mergulharem no mundo da tecnologia.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> Centro de Pesquisa Tecnológica</li>
+                <li><i class="bi bi-check-circle"></i> Integração Natureza-Tecnologia</li>
+                <li><i class="bi bi-check-circle"></i> Comunidade Tecnológica</li>
+              </ul>
+              <a href="#" class="read-more align-self-start"><span>Leia agora</span><i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row gy-4 d-flex">
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <i class="bi bi-binoculars color-cyan"></i>
+              <h4>Foco no aluno</h4>
+            </a>
+          </li>
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <img src="../university-front/assets/img/cerebro.png" style="height: 32px;"
+                alt="icon pequeno de cerebro verde">
+              <h4>Inovação</h4>
+            </a>
+          </li>
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
+              <i class="bi bi-easel color-blue"></i>
+              <h4>Diciplinas</h4>
+            </a>
+          </li>
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
+              <i class="bi bi-map color-orange"></i>
+              <h4>Resultados</h4>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                <h3>Foco no aluno</h3>
+                <p class="fst-italic">
+                  O foco no aluno vai além do acadêmico. Na Universidade, proporcionamos um suporte abrangente,
+                  incluindo orientação acadêmica.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Apoio Integral ao Aluno.
+                  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Envolvimento Ativo do Aluno.
+                  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Personalização do Aprendizado.</li>
+                </ul>
+                <p>
+                  Nosso objetivo é garantir que os alunos se sintam apoiados em todos os aspectos de suas vidas
+                  universitárias, promovendo um ambiente propício ao crescimento e à realização pessoal.
+                </p>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/focus.jpg" alt="" class="img-fluid" style="height: 300px; width: 800;">
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Undaesenti</h3>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui
+                    a. Ipsum neque dolor voluptate nisi sed.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat
+                    nulla pariatur.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-2.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Pariatur</h3>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui
+                    a. Ipsum neque dolor voluptate nisi sed.</li>
+                </ul>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna aliqua.
+                </p>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-3.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Inovação</h3>
+                <p>
+                  Os programas acadêmicos específicos enfocados em tecnologia, como ciência da computação e inteligência
+                  artificial,
+                  preparam os alunos para enfrentar desafios do mundo real, integrando teoria e aplicação para uma
+                  formação completa.
+                </p>
+
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Laboratórios de Pesquisa Avançada.
+                  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Parcerias com Indústria e Startups.
+                  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Programas Acadêmicos Focados em Tecnologia.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/inovasão.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 4 -->
+
+          <div class="tab-pane" id="tab-5">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Diciplinas</h3>
+                <p>
+                  A universidade oferece uma ampla variedade de disciplinas acadêmicas, proporcionando aos alunos a
+                  oportunidade de explorar diversos campos de conhecimento.
+                  Desde ciências exatas e humanas até tecnologia e artes,
+                  nossa gama abrangente de disciplinas permite que os alunos personalizem sua jornada educacional de
+                  acordo com seus interesses e metas profissionais.
+                </p>
+
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Variedade de Disciplinas.
+                  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Abordagem Prática no Ensino.
+                  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Inovação Curricular Contínua.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/diciplina.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 5 -->
+
+          <div class="tab-pane" id="tab-6">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Resultados</h3>
+                <p>
+                  A universidade celebra um histórico consistente de resultados acadêmicos excepcionais,
+                  refletido nas conquistas dos alunos em exames, avaliações e competições.
+                  Nosso compromisso com a excelência educacional se traduz em um ambiente propício ao aprendizado,
+                  promovendo o sucesso dos estudantes em diversas disciplinas
+                </p>
+
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Desempenho Acadêmico Excepcional.
+                  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Contribuições para a Pesquisa e Inovação.
+                  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Sucesso Profissional dos Graduados.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/resultado.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 6 -->
+
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="testimonials-slider swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/manel.jpg" class="testimonial-img" alt="">
+                <h3>Emanuel Victor</h3>
+                <h4>Full Stack</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Optar pelo curso de Análise e Desenvolvimento de Sistemas na Universitech foi uma decisão que impactou
+                  positivamente
+                  minha jornada acadêmica. Na consideração de diversas faculdades tecnológicas no Ceará, destaco a
+                  Universitech
+                  como a principal escolha. Professores notáveis e o compromisso institucional com a qualidade de ensino
+                  foram fundamentais.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/brenera.jpg" class="testimonial-img" alt="">
+                <h3>Breno Oliveira</h3>
+                <h4>Desenvolvedor</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Escolher o curso de Análise e Desenvolvimento de Sistemas na Universitech foi uma jogada incrível.
+                  Ele abre um leque enorme de oportunidades no mercado de trabalho.
+                  Não é só sobre controle, desempenho e conhecimento; também tem aquela pegada de tomar decisões e
+                  trazer inovações tecnológicas para a sala de aula.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/lucas.jpg" class="testimonial-img" alt="">
+                <h3>Lucas Martins</h3>
+                <h4>Desenvolvedor</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Estudar na Universitech foi, definitivamente o que mudou minha carreira profissional.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="https://github.com/matheusponte.png" class="testimonial-img" alt="">
+                <h3>Matheus Ponte</h3>
+                <h4>Desenvolvedor</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  O curso de ADS da Universitech me proporcionou a oportunidade de reunir teoria e prática no mesmo
+                  ambiente,
+                  tendo chances para errar, acertar e sobretudo, aprender.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Na Universitech seu futuro é cheio de possibilidades para Ingressar</h2>
+          <p>Oferecemos um ambiente que valoriza a diversidade, estimula a inovação e
+            proporciona oportunidades únicas para o seu crescimento acadêmico e profissional.
+            Seja bem-vindo(a) a uma jornada educacional cheia de potencial e descobertas na Universitech!</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item">
+
+              <div class="pricing-header">
+                <h3>GRADUAÇÃO</h3>
+
+              </div>
+
+              <ul>
+                <li><i class="bi bi-dot"></i>Na graduação, nosso campus conta com salas e
+                  laboratórios totalmente equipados, prontos para proporcionar uma experiência
+                  prática única na aplicação dos conteúdos. Na Universitech, a graduação é
+                  mais do que aulas teóricas; é uma imersão prática e enriquecedora no conhecimento.</li>
+              </ul>
+
+
+              <div class="text-center mt-auto">
+                <a href="#" class="buy-btn">INGRESSAR</a>
+              </div>
+
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="pricing-item featured">
+
+              <div class="pricing-header">
+                <h3>PÓS GRADUAÇÃO</h3>
+              </div>
+
+              <ul>
+                <li><i class="bi bi-dot"></i> Enriqueça sua trajetória acadêmica com os programas
+                  de pós-graduação na Universitech, onde você terá acesso a um corpo docente de destaque,
+                  com profissionais de referência em suas áreas.</li>
+
+              </ul>
+
+
+              <div class="text-center mt-auto">
+                <a href="#" class="buy-btn">INGRESSAR</a>
+              </div>
+
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="600">
+            <div class="pricing-item">
+
+              <div class="pricing-header">
+                <h3>EaD</h3>
+              </div>
+
+              <ul>
+                <li><i class="bi bi-dot"></i> Explore as facilidades de participar de um curso a distância
+                  que se adapta à sua agenda. O ensino a distância (EaD) na Universitech
+                  é projetado para oferecer plataformas intuitivas, facilitando o seu aprendizado</li>
+
+              </ul>
+
+              <div class="text-center mt-auto">
+                <a href="#" class="buy-btn">INGRESSAR</a>
+              </div>
+
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+    </section><!-- eND iNGRESSAR -->
+
+
+
+
+
+
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Fale conosco</h2>
+          <p>Quer saber mais?</p>
+        </div>
+
+      </div>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="container">
+
+        <div class="row gy-5 gx-lg-5">
+
+          <div class="col-lg-4">
+
+            <div class="info">
+
+
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h4>Localização:</h4>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h4>Email:</h4>
+                  <p>universitech@example.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-phone flex-shrink-0"></i>
+                <div>
+                  <h4>Fone:</h4>
+                  <p>+1 5589 55488 55</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+
+          </div>
+
+          <!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Universitech</h3>
+              <p>
+                Jose Walter, Av N <br>
+                BR +55, BR<br><br>
+                <strong>Fone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> universitech@example.com<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Nossos Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Inicio</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Sobre nós</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Serviços</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Termo de licença</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Calendario Acadêmico</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Nossos Serviços</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Portal do aluno</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Biblioteca Online</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Trabalhe Conosco</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Certificados</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+
+            <p>Mais Noticias</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Pesquisar">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center">
+      <div
+        class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>HeroBiz</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="ButtonControl.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jwt-decode@4.0.0/build/cjs/index.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
